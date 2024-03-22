@@ -1,0 +1,79 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "main";
+
+  width: 100%;
+  max-width: 1280px;
+  padding: 18px 20px;
+  margin: 0 auto;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 30% 40% 30%;
+
+  grid-template-areas:
+    "section1 section2 section2"
+    "section3 section4 section5";
+}
+
+.row-left {
+  grid-area: section1;
+}
+
+.row-right {
+  grid-area: section2;
+}
+
+.switch {
+  grid-area: section3;
+}
+
+.coll-down-left {
+  grid-area: section4;
+}
+
+.coll-down-right {
+  grid-area: section5;
+}
+
+@media screen and (max-width: 909px) {
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+      "section1 section1"
+      "section2 section2"
+      "section3 section3"
+      "section4 section5"
+  }
+}
+
+@media screen and (max-width: 585px) {
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "section1"
+      "section2"
+      "section3"
+      "section4"
+      "section5"
+  }
+}

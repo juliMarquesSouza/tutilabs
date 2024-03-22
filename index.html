@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutilabs</title>
+
+  <link rel="stylesheet" href="libs/fontawesome-free/css/fontawesome.min.css">
+  <link rel="stylesheet" href="libs/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main_responsive.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/images/logo.png" alt="Logo Tutilabs">
+
+      <div>
+        <p> Feito por: Bruno marinho </p>
+      </div>
+    </header>
+    <main>
+      <article class="row-left">
+        <h1 class="title"> Bem-vido ao Tutilabs <img src="assets/images/hand.png" class="animation-hand"
+            alt="icone de mão" srcset="">
+        </h1>
+
+        <p class="">
+          Olá, <br>
+          Agradecemos seu interesse em estagiar na Tutiplast e por participar do nosso teste de front-end. Este teste
+          foi
+          desenvolvido para avaliar suas habilidades e conhecimentos na área, portanto, não se preocupe se não conseguir
+          completar
+          todas as tarefas. O objetivo é entender seu processo de resolução de problemas e seu conhecimento técnico.
+        </p>
+      </article>
+
+      <section class="row-right">
+        <div class="card-banner">
+          <h1> Boa Sorte </h1>
+          <img src="assets/images/image-banner-2.svg" alt="">
+        </div>
+      </section>
+
+      <section class="switch">
+        <p> <b> Tipo de teste </b> </p>
+
+        <button id="btn-front" class="btn active">
+          front-end <i class="fa-regular fa-face-smile"></i>
+        </button>
+
+        <button id="btn-back" class="btn">
+          back-end <i class="fa-regular fa-face-frown"></i>
+        </button>
+
+
+        <div id="stacks-front" class="stacks active">
+          <div id="arrow-left" class="arrow-left">
+            <img src="assets/images/arrow-left.svg" alt="Arrow Left">
+          </div>
+          <div id="row-stack-front" class="row-stack">
+            <div class="stack stack-front white" onclick="selectStack('SASS')">
+              <img src="assets/images/stacks/sass.svg" alt="">
+            </div>
+            <div class="stack stack-front green" onclick="selectStack('VUE')">
+              <img src="assets/images/stacks/vue.svg" alt="">
+            </div>
+            <div class="stack stack-front blue" onclick="selectStack('Typescript')">
+              <img src="assets/images/stacks/TS.svg" alt="" srcset="">
+            </div>
+            <div class="stack stack-front white" onclick="selectStack('Github')">
+              <img src="assets/images/stacks/github.svg" alt="">
+            </div>
+            <div class="stack stack-front orange" onclick="selectStack('HTML')">
+              <img src="assets/images/stacks/html.svg" alt="">
+            </div>
+            <div class="stack stack-front yellow" onclick="selectStack('Javascript')">
+              <img src="assets/images/stacks/JS.svg" alt="" srcset="">
+            </div>
+            <div class="stack stack-front blue" onclick="selectStack('CSS')">
+              <img src="assets/images/stacks/css.svg" alt="">
+            </div>
+          </div>
+          <div id="arrow-right" class="arrow-right active">
+            <img src="assets/images/arrow-right.svg" alt="Arrow Right">
+          </div>
+        </div>
+
+        <div id="stacks-back" class="stacks">
+          <div id="arrow-left-back" class="arrow-left">
+            <img src="assets/images/arrow-left.svg" alt="Arrow Left">
+          </div>
+          <div id="row-stack-back" class="row-stack">
+            <div class="stack stack-back white" onclick="selectStack('Node')">
+              <img src="assets/images/stacks/node.svg" alt="">
+            </div>
+            <div class="stack stack-back green" onclick="selectStack('NestJs')">
+              <img src="assets/images/stacks/nest.svg" alt="">
+            </div>
+            <div class="stack stack-back blue" onclick="selectStack('Mysql')">
+              <img src="assets/images/stacks/sql.svg" alt="" srcset="">
+            </div>
+            <div class="stack stack-back white" onclick="selectStack('Docker')">
+              <img src="assets/images/stacks/docker.svg" alt="">
+            </div>
+          </div>
+          <div id="arrow-right-back" class="arrow-right active">
+            <img src="assets/images/arrow-right.svg" alt="Arrow Right">
+          </div>
+        </div>
+      </section>
+
+      <section class="coll-down-left">
+        <div class="card-stack">
+          <div id="header-stack" class="header">
+            SASS
+          </div>
+
+          <div class="body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Est ac tristique congue at nunc. Urna ullamcorper tortor blandit
+              at interdum
+              eget. Ut ipsum ut dolor dolor diam in. Pharetra sit ultrices vitae turpis augue tempor.
+            </p>
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Est ac tristique congue at nunc. Urna ullamcorper tortor blandit
+              at interdum
+              eget. Ut ipsum ut dolor dolor diam in. Pharetra sit ultrices vitae turpis augue tempor.
+            </p>
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Est ac tristique congue at nunc. Urna ullamcorper tortor blandit
+              at interdum
+              eget. Ut ipsum ut dolor dolor diam in. Pharetra sit ultrices vitae turpis augue tempor.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="coll-down-right">
+        <div class="card-plus">
+          <img src="assets/images/iphone.png" alt="iPhone" srcset="">
+
+          <div class="body">
+            <p> veja mais sobre nossos sistemas </p>
+
+            <div class="btn-container">
+              <button> Visualizar <i class="fa-solid fa-arrow-right-long"></i> </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="libs/fontawesome-free/js/all.min.js"></script>
+  <script src="libs/fontawesome-free/js/fontawesome.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
